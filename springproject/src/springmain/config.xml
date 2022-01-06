@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:context="http://www.springframework.org/schema/context"
+ xmlns:p="http://www.springframework.org/schema/p"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd">
+ 
+ <bean class="springmain.Student"  name="Student1">
+ 
+    <property name="studId">
+    <value>2400</value>   
+    </property>
+    
+    <property name="studName">
+    <value>Rushi Bahul</value>
+    </property>
+    
+    <property name="studAddress">
+    <value>Dhule</value>
+    </property>
+ 
+ </bean>
+ 
+ <!-- beans for other class -->
+ 
+ <bean class ="springmain.School" name="School1">
+ 
+ <property name="schoolRegNo" value="1245"/>
+ 
+ <property name="schoolName" value ="Shri Shivaji Vidya Prasark Santhas Dhule"/>
+ 
+ <property name="schoolStud" value="850" />
+ 
+ <property name="schoolTeacher" value ="56" />
+ 
+ <property name="schoolGrant" value="YES" />
+ 
+  </bean>
+  
+  <!-- School Class another Object. --> 
+  
+  <bean class ="springmain.School" name="School2">
+ 
+ <property name="schoolRegNo" value="6749"/>
+ 
+ <property name="schoolName" value ="Shri Agresenji Maharaj HighSchool Dhule."/>
+ 
+ <property name="schoolStud" value="550" />
+ 
+ <property name="schoolTeacher" value ="30" />
+ 
+ <property name="schoolGrant" value="NO" />
+ 
+  </bean>
+  
+  <!--Using P Schema   -->
+  
+  <bean class="springmain.Student" name="Student2" p:studId="72" p:studName="Pushpak Mali" p:studAddress="Pune" />
+ 
+ 
+ </beans>

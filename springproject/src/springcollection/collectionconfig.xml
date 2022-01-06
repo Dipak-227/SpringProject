@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:context="http://www.springframework.org/schema/context"
+ xmlns:p="http://www.springframework.org/schema/p"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd">
+ 
+ 
+      <bean class="springcollection.Employee" name="Emp1">
+         
+          <property name="name"  value="Dipak" />
+          
+            <!-- Second -->
+          <property name="phones">
+             
+             <list>
+                 <value>7972266089</value>
+                 <value>7038680979</value>             
+             </list>
+          
+          </property>
+          
+          <!-- Third -->
+          <property name="address">
+            
+              <set>
+                   <value>Kundane</value>
+                   <value>Dhule</value>
+              </set>
+          
+          </property>
+         
+         <!-- Fourth -->
+            
+           <property name="course">
+             <map>
+             <entry  key="Java"  value="2-Months" /> 
+              <entry key="Python" value="1.5-Months" /> 
+              <entry key="Spring" value="3-Months" />       
+             </map>
+           
+           </property>
+           
+     <!-- Last -->
+     
+       	<property name="props">
+         
+           <props>
+         	  <prop key="UserName">Dipak_More</prop>
+         	  <prop key="Password">Dipak#123</prop>
+           </props>
+       
+      	 </property>
+      	
+      </bean>
+ 
+ 
+ 
+ </beans>
